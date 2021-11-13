@@ -1,0 +1,212 @@
+<nav class="nav">
+  
+  <div class="nav_t">
+    <div class="container nav_top">
+    <%= image_tag "logo.png" %>
+        <div class="nav_top_search">
+            <form action="">
+              <%= link_to raw("<i class=\"fas fa-search\"></i>"), "#" %> 
+              <input type="text" placeholder="Search product" >
+            </form>
+        </div>
+        <div class="nav_top_btns">
+          <%= link_to "Sign in", "#", class:"btn btn_nav btn_gray"%>
+          <%= link_to raw("<i class=\"fas fa-shopping-cart\"></i>Card"), "#", class:"btn btn_nav btn_orange"%>
+        </div>
+    </div>
+  </div>
+  <div class="nav_b" >
+    <div class="container nav_bot">
+    <%= link_to raw("Coupon Categories  <i class=\"fas fa-bars\"></i>"), "#" ,class:"btn_category btn btn_darkblue" %>
+        <ul>
+            <li><%= link_to "Нүүр", "#" %></li>
+            <li><%= link_to "Купон", "#" %></li>
+        </ul>
+        <%= link_to "Contact", "#", class:"btn btn_gray btn_contact" %>
+    </div>
+  </div>
+</nav>
+<header class="header">
+    <div class="container">
+        <div class="swiper_header">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper_header_slide">
+                        <div class="swiper_header_slide_text">
+                            <h1 class="header_title">New iPhone 13</h1>
+                            <h4 class="header_text">Ymar negen uria ug</h4>
+                            <h3 class="header_extra">35%-ийн хөнгөлөлт</h3>
+                            <%= button_to "Дэлгэрэнгүй", "#", class:"btn btn_header btn_blue" %>
+                        </div>
+                        <div class="swiper_header_slide_img">
+                            <div class="swiper_header_slide_img_area header_img_big">
+                            <img src="#" alt=""></div>
+                            <div class="swiper_header_slide_img_area header_img_small">
+                            <img src="#" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</header>
+<section id="feature" class="feature">
+    <div class="container feature_">
+        <div class="feature_top">
+            <h2 class="section_title">Өнөөдрийн онцлох</h2>
+            <div class="section_stratch"></div>
+        </div>
+        <div class="feature_bot">
+            <div class="feature_bot_area feature_bot_area_1 ">
+                <div class="feature_bot_area_text">
+                      <h3 class="product_name">Samsung s21</h3>
+                      <div class="feature_bot_area_text_price">
+                          <h6 class="price">$ 12300</h6>
+                          <p class="sale">-30%</p>
+                      </div>
+                      <div class="feature_bot_area_text_more">
+                          <p class="name">Samsung</p>
+                          <%= link_to "Дэлгэрэнгүй", "#", class:"btn btn_feature btn_orange" %>
+                      </div>
+                    </div>
+                <div class="feature_bot_area_category section_category">Device</div>
+                </div>
+            </div>
+        </div>
+
+</section>
+<section id="popular" class="popular">
+    <div class="container popular_">
+        <div class="popular_top">
+            <h2 class="section_title">Popular Now</h2>
+            <div class="section_stratch"></div>
+        </div>
+        <div class="popular_bot">
+            <div class="popular_bot_area">
+                <div class="popular_bot_area_img">
+                <%= image_tag "popular/img_1.gif" %>
+                <div class="popular_bot_area_text">
+                    <div class="popular_bot_area_text_sale">
+                        <h6 class="product_name">Coffee</h6>
+                        <p class="sale">-30%</p>
+                    </div>
+                    <h6 class="price">$ 12300</h6>
+                    <p class="name">Tom N Toms
+                    </p>
+                </div>
+            </div>
+            <div class="popular_bot_area_category section_category">Drink</div>
+        </div>
+    </div>
+</section>
+<section id="popular" class="popular">
+    <div class="container popular_ popular_new">
+        <div class="popular_top">
+            <h2 class="section_title">Шинээр нэмэгдсэн</h2>
+            <div class="section_stratch"></div>
+        </div>
+        <div class="popular_bot">
+            <div class="popular_bot_area">
+                <div class="popular_bot_area_img">
+                <%= image_tag "popular/img_1.gif" %>
+                <div class="popular_bot_area_text">
+                    <div class="popular_bot_area_text_sale">
+                        <h6 class="product_name">Coffee</h6>
+                        <p class="sale">-30%</p>
+                    </div>
+                    <h6 class="price">$ 12300</h6>
+                    <p class="name">Tom N Toms
+                    </p>
+                </div>
+            </div>
+            <div class="popular_bot_area_category section_category">Drink</div>
+        </div>
+    </div>
+</section>
+<section id="new" class="new">
+    <div class="container new_">
+        <div class="new_top">
+            <div class="new_top_area new_top_area_1">
+                <div class="new_top_area_text">
+                    <h5>Product Name</h5>
+                    <h6>Description</h6>
+                    <div class="new_top_area_text_sale">
+                        <h6 class="price">$ 12222 <span>/was@Price</span></h6>
+                        <p class="sale">-30%</p>
+                    </div>
+
+                </div>
+                <div class="new_top_area_img">
+                <%= image_tag "new/img_1.jpg" %>
+                </div>
+            </div>
+            <div class="new_top_area new_top_area_1">
+                <div class="new_top_area_text">
+                    <h5>Product Name</h5>
+                    <h6>Description</h6>
+                    <div class="new_top_area_text_sale">
+                        <h6 class="price">$ 12222 <span>/was@Price</span></h6>
+                        <p class="sale">-30%</p>
+                    </div>
+
+                </div>
+                <div class="new_top_area_img">
+                <%= image_tag "new/img_1.jpg" %>
+                </div>
+            </div>
+            <div class="new_top_area new_top_area_1">
+                <div class="new_top_area_text">
+                    <h5>Product Name</h5>
+                    <h6>Description</h6>
+                    <div class="new_top_area_text_sale">
+                        <h6 class="price">$ 12222 <span>/was@Price</span></h6>
+                        <p class="sale">-30%</p>
+                    </div>
+
+                </div>
+                <div class="new_top_area_img">
+                <%= image_tag "new/img_1.jpg" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="deal" class="deal">
+    <div class="container">
+        <div class="deal_top">
+            <h2 class="section_title">Hot Deals</h2>
+            <div</div>
+        </div>
+        <div class="deal_bot">
+            <div class="deal_bot_area">
+                <div class="deal_bot_area_text">
+                    <h6>Тавилга</h6>
+                    <h3>Буйдан</h3>
+                </div>
+                <%= button_to "Дэлгэрэнгүй", "#", class:"btn_deal btn btn_transparent" %>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="parthnership" class="parthnership">
+    <div class="container">
+        <div class="swiper_parthnership">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper_parthnership_slide">
+                    <img src="" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_parthnership_slide">
+                    <img src="" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_parthnership_slide">
+                    <img src="" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
